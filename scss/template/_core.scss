@@ -1,5 +1,10 @@
 html, body {
-	height: 100% !important; // use !important to override slidebars.min.css
+	height: 100% !important; // override Slidebars
+	overflow-x: visible !important; // another Slidebars override
+}
+
+html.sb-active, html.sb-active body {
+    overflow-x: hidden !important; // use this only when Slidebar is active
 }
 
 body {
